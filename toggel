@@ -1,0 +1,16 @@
+import './App.css';
+import React from 'react';
+function App(){
+const [status,setStetus]=React.useState(true)
+return(
+    <div className="APP">
+        {
+            status?<h1>hello word!</h1>:null
+        }
+        <button onClick={()=>setStetus(!status)}>Toggel</button>
+    </div>
+)
+    };
+   
+
+export default App;
